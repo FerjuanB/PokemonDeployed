@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+:root {
+  --primary: #eac67a;
+  --secondary: #f4a261;
+  --text: #2a49d1b0;
+}
+::placeholder{
+  color:rgba(0, 0, 0, 0.568);
+  font-style: italic;
+  
+}
+
+
+button {
+  background-color: var(--secondary);
+  color: #ffffff;
+  padding: 4px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.formB {
+  background: #efefbb;
+  background: linear-gradient(to right, #d4d3dd, #efefbb);
+  /* position: relative; */
+  width: 500px;
+  display:flex;
+flex-direction: column;
+justify-content: center;
+  /* height: fit-content; */
+  margin: auto ;
+;
+
+}
+.formB .input{
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: flex;
+  width: 100%;
+  /* height: fit-content; */
+  padding: 15px 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(7, 7, 7, 0.932);
+}
+
+
+
+
+.errorN{
+  position: absolute;
+color: red;
+font-weight: 800;
+}
+.Div{
+ position: relative;
+ margin-bottom: 17px;
+}

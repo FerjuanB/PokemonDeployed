@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+body {
+    font-family: "Lato";
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0077cc;
+  }
+
+.main{
+  background-color: #eeeeeec0;
+  padding: 5px;
+  display: flex;
+  text-decoration: none;
+  color: #0077cc;
+  justify-content: space-between;
+  align-items: center;
+ 
+  border-radius: 5px;
+}
+.main a {
+    margin-right: 10px;
+  }
+.logo{
+  width: 9%;
+}
