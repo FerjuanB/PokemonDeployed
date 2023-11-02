@@ -5,14 +5,14 @@ import { GET_POKEMONS, GET_POKEMON_ID, GET_TYPES, SET_PAGE,SORTATTACK,SORTNAME,F
 
     export const getPokemons = () =>{
         return async function (dispatch){
-            const pokeApi= (await axios.get("http://localhost:3001/pokemons")).data
+            const pokeApi= (await axios.get("/pokemons")).data
             dispatch({type: GET_POKEMONS,payload: pokeApi})
         }
     }
 
     export const getPokemonsId = (id) =>{
         return async function (dispatch){
-            const pokeApi= await axios.get(`http://localhost:3001/pokemons/${id}`)
+            const pokeApi= await axios.get(`/pokemons/${id}`)
             const pokemon = pokeApi.data;
             dispatch({type:GET_POKEMON_ID, payload:pokemon})
         }
@@ -34,7 +34,7 @@ import { GET_POKEMONS, GET_POKEMON_ID, GET_TYPES, SET_PAGE,SORTATTACK,SORTNAME,F
 
     export const getTypes = ()=>{
         return async function (dispatch){
-            const pokeTypes = (await axios.get("http://localhost:3001/types")).data
+            const pokeTypes = (await axios.get("/types")).data
             dispatch({type:GET_TYPES, payload:pokeTypes})
         }
     }
