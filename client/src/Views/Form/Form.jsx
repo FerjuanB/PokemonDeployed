@@ -101,7 +101,7 @@ const submitHandler = (e)=>{
     alert("Debés completar los campos Nombre, Imagen, Ataque, Defensa, Velocidad, Peso, Altura  Tipos, antes de crear un nuevo Pokemon")
     return;
   }
-  if(!confirm(`seguro que quiere crear el pokemon ${form.name}?`))return
+  if(!alert(`seguro que quiere crear el pokemon ${form.name}?`))return
 
   axios.post("http://localhost:3001/pokemons",form)
   .then(res=>
