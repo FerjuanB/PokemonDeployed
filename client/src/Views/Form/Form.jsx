@@ -103,7 +103,7 @@ const submitHandler = (e)=>{
   }
   alert(`seguro que quiere crear el pokemon ${form.name}?`)
 
-  axios.post("http://localhost:3001/pokemons",form)
+  axios.post("/pokemons",form)
   .then(res=>
     {
       alert(`Pokemon ${form.name} creado exitosamente!`)
